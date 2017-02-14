@@ -28,11 +28,11 @@ jekyll server
 
 ## 配置
 
-#### 1. 请将 `_config.yml` 中的 帐户／ID／用户名 等信息改为你自己的；
-#### 2. 请修改 `about/index.html` 中的有关个人信息；
-#### 3. 请在 `_includes/head.html` 修改和统计分析有关的代码；
-#### 4. 在 `_include/nav.html` 你可以改变或者删减导航栏标签；
-#### 5. 如果你想更改博客底部的 GitHub 或 知乎 链接，可以编辑 `_includes/footer.html`。
+1. 请将 `_config.yml` 中的 帐户／ID／用户名 等信息改为你自己的；
+2. 请修改 `about/index.html` 中的有关个人信息；
+3. 请在 `_includes/head.html` 修改和统计分析有关的代码；
+4. 在 `_include/nav.html` 你可以改变或者删减导航栏标签；
+5. 如果你想更改博客底部的 GitHub 或 知乎 链接，可以编辑 `_includes/footer.html`。
 
 ## 备注
 
