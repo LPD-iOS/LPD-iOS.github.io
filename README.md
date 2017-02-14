@@ -38,4 +38,4 @@ Modified from [https://github.com/androiddevelop/CodeboyBlog](https://github.com
 
 ## License
 
-YinYueTaiDownloader is available under the MIT license. See the LICENSE file for more info.
+LPD-iOS.github.io is available under the Apache-2.0 license. See the LICENSE file for more info.
