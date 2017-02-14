@@ -14,17 +14,17 @@
 
 ## Setup
 
-1. Install Jeykll
+#### 1. Install Jeykll
 ```
 gem install jekyll
 gem install jekyll-paginate
 ```
-2. Local Preview
+#### 2. Local Preview
 ```
 jekyll server
 ```
-3. Push to GitHub
-4. Open GitHub Pages
+#### 3. Push to GitHub
+#### 4. Open GitHub Pages
 
 ## Config
 

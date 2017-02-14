@@ -14,17 +14,17 @@
 
 ## 建立
 
-1. 安装 Jeykll
+#### 1. 安装 Jeykll
 ```
 gem install jekyll
 gem install jekyll-paginate
 ```
-2. 本地预览
+#### 2. 本地预览
 ```
 jekyll server
 ```
-3. 将本地仓库上传到 GitHub
-4. 打开 GitHub Pages
+#### 3. 将本地仓库上传到 GitHub
+#### 4. 打开 GitHub Pages
 
 ## 配置
 
