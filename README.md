@@ -40,6 +40,8 @@ jekyll server
 
 ## PS
 
+Use Jekyll Theme [Clean Blog](https://github.com/deviodigital/cleanblog/), based on the [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
+
 Modified from [https://github.com/androiddevelop/CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog).
 
 ## License
