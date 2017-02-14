@@ -1,5 +1,7 @@
 # LPD-iOS.github.io
 
+> [中文介绍](https://github.com/LPD-iOS/LPD-iOS.github.io/blob/master/README_CN.md)
+
 ## OverView
 
 ![lpd-ios.github.io](lpd-ios.github.io.png)
@@ -7,6 +9,7 @@
 ## Requirements
 
 - Ruby
+- Gem
 - Jekyll
 
 ## Setup
@@ -18,12 +21,14 @@ gem install jekyll
 gem install jekyll-paginate
 ```
 
-2. Push to github
-3. Local Preview
+2. Local Preview
 
 ```
 jekyll server
 ```
+
+3. Push to GitHub
+4. Open GitHub Pages
 
 ## Config
 
