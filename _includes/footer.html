@@ -5,14 +5,13 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <a href="{{ " /feed.xml " | prepend: site.baseurl }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
-                    
                     {% if site.zhihu_username %}
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
@@ -22,9 +21,7 @@
                             </span>
                         </a>
                     </li>
-                    {% endif %}
-
-                    {% if site.github_username %}
+                    {% endif %} {% if site.github_username %}
                     <li>
                         <a target="_blank" href="https://github.com/{{ site.github_username }}">
                             <span class="fa-stack fa-lg">
@@ -40,62 +37,59 @@
         </div>
     </div>
 </footer>
-
 <!-- jQuery -->
 <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
-
 <!-- Bootstrap Core JavaScript -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/codeboy.min.js " | prepend: site.baseurl }}"></script>
-
+<script src="{{ " /js/codeboy.min.js " | prepend: site.baseurl }}"></script>
 <!-- TODO: only load in tag.html -->
-<script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
-    $.fn.tagcloud.defaults = {
-        //size: {start: 1, end: 1, unit: 'em'},
-        color: {start: '#bbbbee', end: '#0085a1'},
-    };
-    $(function () {
-        $('#tag_cloud a').tagcloud();
-    });
+$.fn.tagcloud.defaults = {
+    //size: {start: 1, end: 1, unit: 'em'},
+    color: {
+        start: '#bbbbee',
+        end: '#0085a1'
+    },
+};
+$(function() {
+    $('#tag_cloud a').tagcloud();
+});
 </script>
-
 <!-- async load function -->
 <script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+function async(u, c) {
+    var d = document,
+        t = 'script',
+        o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+        o.addEventListener('load', function(e) {
+            c(null, e);
+        }, false);
     }
+    s.parentNode.insertBefore(o, s);
+}
 </script>
-
 <!-- Highlight.js -->
 <script>
-    async("//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js",function(){
-        hljs.initHighlightingOnLoad();
-    })
+async("//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js", function() {
+    hljs.initHighlightingOnLoad();
+})
 </script>
 <link href="//cdn.bootcss.com/highlight.js/9.4.0/styles/github.min.css" rel="stylesheet">
-
 <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
       opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
-    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
-
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签">
     <div style="position: fixed; top: 16px; right: 16px;">
-        <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+        <img src="/search/img/cb-close.png" id="cb-close-btn" />
     </div>
 </div>
-
 <div style="position: fixed; right: 16px; bottom: 20px;">
-    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击 Ctrl 试一下"/>
+    <img src="/search/img/cb-search.png" id="cb-search-btn" title="双击 Ctrl 试一下" />
 </div>
-
-<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
-
-<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" href="{{ " /search/css/cb-search.css " | prepend: site.baseurl }}">
+<script src="{{ " /search/js/bootstrap3-typeahead.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /search/js/cb-search.js " | prepend: site.baseurl }}"></script>
