@@ -1,0 +1,87 @@
+######################站点全局信息，需要部分修改#########################
+# Site settings
+title: LPD-iOS
+header-img: img/home-bg.jpg
+email: LPD-iOS@eyrefree.org
+url: "https://lpd-ios.github.io/"
+description: "饿了么物流 iOS 开发组"
+github_username: LPD-iOS
+zhihu_username: LPD-iOS
+duoshuo_id: lpd-ios
+
+##########################上述信息需要您修改########3####################
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+posts_dir: ./_posts
+#collections:  null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      ["jekyll-paginate"]
+#gems:      []
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: pretty
+paginate: 16
+paginate_path: /page/:num
+timezone: Asia/Shanghai
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style

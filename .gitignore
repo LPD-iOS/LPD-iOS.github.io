@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.idea/
+*.iml
+
+.DS_Store
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+node_modules/
