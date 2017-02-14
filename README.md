@@ -42,8 +42,6 @@ jekyll server
 
 Use Jekyll Theme [Clean Blog](https://github.com/deviodigital/cleanblog/), based on the [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
 
-Modified from [https://github.com/androiddevelop/CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog).
-
 ## License
 
 LPD-iOS.github.io is available under the Apache-2.0 license. See the LICENSE file for more info.
