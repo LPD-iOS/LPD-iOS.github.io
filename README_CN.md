@@ -20,13 +20,11 @@
 gem install jekyll
 gem install jekyll-paginate
 ```
-
 2. 本地预览
 
 ```
 jekyll server
 ```
-
 3. 将本地仓库上传到 GitHub
 4. 打开 GitHub Pages
 

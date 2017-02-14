@@ -20,13 +20,11 @@
 gem install jekyll
 gem install jekyll-paginate
 ```
-
 2. Local Preview
 
 ```
 jekyll server
 ```
-
 3. Push to GitHub
 4. Open GitHub Pages
 
@@ -40,7 +38,7 @@ jekyll server
 
 ## PS
 
-Use Jekyll Theme [Clean Blog](https://github.com/deviodigital/cleanblog/), based on the [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
+Use Jekyll Theme [Clean Blog](https://github.com/deviodigital/cleanblog/), based on [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
 
 ## License
 
