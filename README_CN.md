@@ -15,13 +15,11 @@
 ## 建立
 
 1. 安装 Jeykll
-	
 ```
 gem install jekyll
 gem install jekyll-paginate
 ```
 2. 本地预览
-
 ```
 jekyll server
 ```

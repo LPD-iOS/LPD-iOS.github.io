@@ -15,13 +15,11 @@
 ## Setup
 
 1. Install Jeykll
-	
 ```
 gem install jekyll
 gem install jekyll-paginate
 ```
 2. Local Preview
-
 ```
 jekyll server
 ```
