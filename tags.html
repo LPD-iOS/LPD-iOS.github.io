@@ -34,18 +34,23 @@ header-img: "img/tags-bg.jpg"
             <!-- 标签列表 -->
             {% for tag in site.tags %}
             <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</span> {% for post in tag[1] %}
+                <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</span>
+                {% for post in tag[1] %}
                 <div class="post-preview">
                     <a href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title">            {{ post.title }}
-				        </h2> {% if post.subtitle %}
+                        <h2 class="post-title">
+                        {{ post.title }}
+				        </h2>
+                        {% if post.subtitle %}
                         <h3 class="post-subtitle">
 				            {{ post.subtitle }}
-				        </h3> {% endif %}
+				        </h3>
+                        {% endif %}
                     </a>
                     <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
                 </div>
-                <hr> {% endfor %}
+                <hr>
+                {% endfor %}
             </div>
             {% endfor %}
         </div>
