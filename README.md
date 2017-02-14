@@ -28,9 +28,10 @@ jekyll server
 ## Config
 
 1. Please change id/user_id/user_name or some other information in `_config.yml`;
-2. Please change personal information in about/index.html;
-3. You can change navigation label in `_include/nav.html`;
-4. If you want to change "GitHub" or "知乎" in the bottom of the blog, please edit `_includes/footer.html`.
+2. Please change personal information in `about/index.html`;
+3. Please change your statistical analysis code in `_includes/head.html`;
+4. You can change navigation label in `_include/nav.html`;
+5. If you want to change "GitHub" or "知乎" in the bottom of the blog, please edit `_includes/footer.html`.
 
 ## PS
 
