@@ -2,7 +2,7 @@
 layout: post
 title: '图解 ReactiveCocoa 基本函数'
 date: '2016-10-10'
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-unix.jpg"
 tags:
      - iOS
      - ReactiveCocoa

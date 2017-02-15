@@ -2,7 +2,7 @@
 layout: post
 title: 'LPDMvvmKit 系列之 UITableView 的改造'
 date: '2016-09-27'
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-tranquil.jpg"
 tags:
      - iOS
      - LPDMvvmKit

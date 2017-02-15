@@ -2,7 +2,7 @@
 layout: post
 title: '造轮子 | 如何设计一个面向协议的 iOS 网络请求库'
 date: '2017-02-12'
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-web.jpg"
 tags:
      - iOS
      - POP

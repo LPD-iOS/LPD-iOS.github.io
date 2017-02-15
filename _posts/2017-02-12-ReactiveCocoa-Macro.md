@@ -2,7 +2,7 @@
 layout: post
 title: 'ReactiveCocoa 中奇妙无比的“宏”魔法'
 date: '2017-02-12'
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-theory.jpg"
 tags:
      - iOS
      - ReactiveCocoa
