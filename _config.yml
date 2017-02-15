@@ -70,7 +70,7 @@ redcarpet:
   extensions: []
 
 kramdown:
-  use_coderay:    true
+  enable_coderay: true
   auto_ids:       true
   footnote_nr:    1
   entity_output:  as_char
@@ -79,10 +79,10 @@ kramdown:
   enable_coderay: false
   input: GFM
 
-  coderay:
-    wrap:              div
-    line_numbers:      inline
-    line_number_start: 1
-    tab_width:         4
-    bold_every:        10
-    css:               style
+syntax_highlighter_opts:
+  wrap:              div
+  line_numbers:      inline
+  line_number_start: 1
+  tab_width:         4
+  bold_every:        10
+  css:               style
