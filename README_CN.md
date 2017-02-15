@@ -36,7 +36,7 @@ jekyll server
 
 ## 备注
 
-使用 [Clean Blog](https://github.com/deviodigital/cleanblog/) 主题搭建，在 [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog) 基础上进行了修改，感谢前辈们的工作！
+使用 [Jekyll](https://github.com/jekyll/jekyll) 搭建，在 [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog) 基础上进行了修改，感谢前辈们的工作！
 
 ## 协议
 
