@@ -40,4 +40,4 @@ jekyll server
 
 ## 协议
 
-LPD-iOS.github.io is available under the Apache-2.0 license. See the LICENSE file for more info.
+LPD-iOS.github.io 基于 Apache-2.0 协议进行分发和使用，更多信息参见协议文件。
