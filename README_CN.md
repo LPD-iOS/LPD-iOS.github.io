@@ -36,7 +36,8 @@ jekyll server
 
 ## 备注
 
-使用 [Jekyll](https://github.com/jekyll/jekyll) 搭建，在 [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog) 基础上进行了修改，感谢前辈们的工作！
+- 双击 Ctrl 唤出文章搜索框；
+- 使用 [Jekyll](https://github.com/jekyll/jekyll) 搭建，在 [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog) 基础上进行了修改，感谢前辈们的工作！
 
 ## 协议
 
