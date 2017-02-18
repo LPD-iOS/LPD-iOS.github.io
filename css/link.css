@@ -1,0 +1,63 @@
+/* page link, copy from Fexo: https://github.com/forsigner/fexo; */
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.link-url {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: auto;
+}
+
+.link-item {
+    position: relative;
+    margin-left: -23px;
+    padding: 8px 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.link-list {
+    line-height: 1.8em;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.wrap-info {
+    line-height: 1.3em;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.name {
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+}
+
+.info {
+    font-size: 13px;
+    color: #999;
+    min-width: 240px;
+    box-sizing: border-box;
+}

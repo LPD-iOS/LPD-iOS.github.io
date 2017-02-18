@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ " /css/codeboy.min.css " | prepend: site.baseurl }}">
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ " /css/syntax.css " | prepend: site.baseurl }}">
+
+    {% if page.title == 'Link' %}
+        <link rel="stylesheet" href="{{ " /css/link.css " | prepend: site.baseurl }}">
+    {% endif %}
+    <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" href="feed.xml" title="LPD-iOS">
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
