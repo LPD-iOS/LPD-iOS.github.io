@@ -36,7 +36,8 @@ jekyll server
 
 ## PS
 
-Use [Jekyll](https://github.com/jekyll/jekyll), based on [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
+- Double Click `Ctrl` button will pop `Search Dialog Box`;
+- Use [Jekyll](https://github.com/jekyll/jekyll), based on [CodeboyBlog](https://github.com/androiddevelop/CodeboyBlog), thanks to them!
 
 ## License
 
