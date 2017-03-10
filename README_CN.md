@@ -6,7 +6,7 @@
 
 ![](screenshot_main.jpg)
 
-![](screenshot_tags)
+![](screenshot_tags.jpg)
 
 ## 预览
 
