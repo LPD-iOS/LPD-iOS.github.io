@@ -7,7 +7,7 @@ tags:
      - NetworkExtension
      - NEHotspotHelper
      - WiFi
-author: 'Assuner'
+author: 'EyreFree'
 ---
 
 iOS 9 发布之后，苹果推出了 NetworkExtension，利用这个框架可以实现很多和网络相关的操作。本文主要介绍怎样使用其中的 NEHotspotHelper 进行设备 WiFi 列表的获取。
