@@ -18,7 +18,7 @@ description: "饿了么物流 iOS 开发组博客"
             {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">作者 {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} 日期 {{ post.date | date: "%Y年%m月%d日" }}</p>
 </div>
 <hr>
 {% endfor %}
