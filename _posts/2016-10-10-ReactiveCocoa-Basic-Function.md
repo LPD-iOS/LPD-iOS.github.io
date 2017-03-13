@@ -30,7 +30,8 @@ ReactiveCocoa repo上最简单的一句话对FRP做了本质的描述，而repo�
 
 * 订阅者（Subscriber） a subscriber subscribes to a signal. RAC lets blocks,objects, and properties subscribe to signals
 
-##filter
+## filter
+
 ```objective-c
 RACSignal *signal = [@[ @1, @2, @3 ] rac_sequence].signal; signal = [signal filter:^BOOL(NSNumber *value) {
     return value.integerValue % 2;
@@ -39,9 +40,11 @@ RACSignal *signal = [@[ @1, @2, @3 ] rac_sequence].signal; signal = [signal filt
     NSLog(@"%@", value);
 }];
 ```
+
 ![filter][2]
 
-##map
+## map
+
 ```objective-c
   RACSignal *signal = [@[ @1, @2, @3 ] rac_sequence].signal;
   signal = [signal map:^id(NSNumber *value) {
@@ -51,9 +54,11 @@ RACSignal *signal = [@[ @1, @2, @3 ] rac_sequence].signal; signal = [signal filt
     NSLog(@"%@", value);
   }];
 ```
+
 ![map][3]
 
-##merge
+## merge
+
 ```objective-c
 RACSignal *signal1 = [@[ @1, @2 ] rac_sequence].signal;
 RACSignal *signal2 = [@[ @4, @5 ] rac_sequence].signal;
@@ -62,9 +67,11 @@ RACSignal *signal2 = [@[ @4, @5 ] rac_sequence].signal;
     NSLog(@"%@", value);
 }];
 ```
+
 ![merge][4]
 
-##combineLatest
+## combineLatest
+
 ```objective-c
   RACSignal *signal1 = [@[ @1, @2 ] rac_sequence].signal;
   RACSignal *signal2 = [@[ @3, @4 ] rac_sequence].signal;
@@ -73,9 +80,11 @@ RACSignal *signal2 = [@[ @4, @5 ] rac_sequence].signal;
     NSLog(@"%@", value);
   }];
 ```
+
 ![combineLatest][5]
 
-##combineLatest & reduce
+## combineLatest & reduce
+
 ```objective-c
   RACSignal *signal1 = [@[ @1, @2 ] rac_sequence].signal;
   RACSignal *signal2 = [@[ @3, @4 ] rac_sequence].signal;
@@ -87,9 +96,11 @@ RACSignal *signal2 = [@[ @4, @5 ] rac_sequence].signal;
     NSLog(@"%@", value);
   }];
 ```
+
 ![combineLatest & reduce][6]
 
-##flatten
+## flatten
+
 ```objective-c
 RACSignal *signal1 = [@[ @1, @2 ] rac_sequence].signal;
 RACSignal *signal2 = [RACSignal return:signal1];
@@ -98,9 +109,11 @@ RACSignal *signal2 = [RACSignal return:signal1];
     NSLog(@"%@", value);
 }];
 ```
+
 ![flatten][7]
 
-##flattenMap
+## flattenMap
+
 ```objective-c
 RACSignal *signal = [@[ @1, @2 ] rac_sequence].signal;
 
@@ -110,9 +123,11 @@ RACSignal *signal = [@[ @1, @2 ] rac_sequence].signal;
     NSLog(@"%@", value);
 }];
 ```
+
 ![flattenMap][8]
 
-##not replay
+## not replay
+
 ```objective-c
 RACSubject *letters = [RACSubject subject];
 RACSignal *signal = letters;
@@ -126,9 +141,11 @@ RACSignal *signal = letters;
 [letters sendNext:@"B"];
 [letters sendNext:@"C"];
 ```
+
 ![not replay][9]
 
-##replay
+## replay
+
 ```objective-c
 RACSubject *letters = [RACReplaySubject subject];
 RACSignal *signal = letters;
@@ -145,9 +162,11 @@ RACSignal *signal = letters;
 }];
 [letters sendNext:@"C"];
 ```
+
 ![replay][10]
 
-##replayLast
+## replayLast
+
 ```objective-c
 RACSubject *letters = [RACSubject subject];
 RACSignal *signal = [letters replayLast];
@@ -164,9 +183,11 @@ RACSignal *signal = [letters replayLast];
 }];
 [letters sendNext:@"C"];
 ```
+
 ![replayLast][11]
 
-##replayLazily
+## replayLazily
+
 ```objective-c
 RACSubject *letters = [RACSubject subject];
 RACSignal *signal = [letters replayLazily];
@@ -184,9 +205,11 @@ RACSignal *signal = [letters replayLazily];
 }];
 [letters sendNext:@"D"];
 ```
+
 ![replayLazily][12]
 
-##zip
+## zip
+
 ```objective-c
 RACSubject *letters = [RACSubject subject];
 RACSubject *numbers = [RACSubject subject];
@@ -209,6 +232,7 @@ RACSignal *combined =
 [numbers sendNext:@"2"];
 [numbers sendNext:@"3"];
 ```
+
 ![zip][13]
 
 完整的源码可以在这里找到 [Demo](https://gist.github.com/foxsofter/5ece717adbd5546d0c22f8d4b1dce5ae)

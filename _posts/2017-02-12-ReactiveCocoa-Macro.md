@@ -14,12 +14,7 @@ author: '一缕殇流化隐半边冰霜'
 
 在ReactiveCocoa 中，开源库作者为我们提供了很多种魔法，“黑”魔法，“红”魔法……今天就让先来看看“红”魔法。
 
-
 ![](http://upload-images.jianshu.io/upload_images/1194012-7b89b274ffb65d29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
 
 在ReactiveCocoa 中，封装了很多非常实用的“宏”，使用这些“宏”为我们开发带来了很多的便利。
 
@@ -30,7 +25,6 @@ author: '一缕殇流化隐半边冰霜'
 - 1.关于宏
 - 2.ReactiveCocoa 中的元宏
 - 3.ReactiveCocoa 中常用的宏
-
 
 ### 一. 关于宏
 
@@ -43,13 +37,9 @@ author: '一缕殇流化隐半边冰霜'
 
 [Lisp](https://zh.wikipedia.org/wiki/Lisp)类语言如[Common Lisp](https://zh.wikipedia.org/wiki/Common_Lisp)和[Scheme](https://zh.wikipedia.org/wiki/Scheme)有更精巧的宏系统：宏的行为如同是函数对自身程序文本的变形，并且可以应用全部语言来表达这种变形。一个C宏可以定义一段语法的替换，然而一个Lisp的宏却可以控制一节代码的计算。
 
-
-
 对于编译语言来说，所有的宏都是在预编译的时候被展开的，所以在lex进行词法扫描生成Token，词法分析过程之前，所有的宏都已经被展开完成了。
 
 对于Xcode，预处理或者预编译阶段是可以直接查看的。
-
-
 
 ![](http://upload-images.jianshu.io/upload_images/1194012-a876b0c98d83c9c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -65,19 +55,11 @@ author: '一缕殇流化隐半边冰霜'
 
 2.宏经过预编译之后出来的代码，是可以用来检测宏写的是否正确的，但是无法看到宏被展开的具体过程。这意味着我们可以通过Xcode这个功能来查看宏的作用，但是无法知道宏的具体实现。具体实现还是需要通过查看源码来分析。
 
-
 ReactiveCocoa中的宏，如果不查看源码分析，会觉得那些宏都像魔法一样奇妙无比，接下来就来解开“宏”魔法的神秘面纱。
-
 
 ### 二. ReactiveCocoa 中的元宏
 
-
-
 ![](http://upload-images.jianshu.io/upload_images/1194012-f086aba5a2949e99.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
 
 在ReactiveCocoa的宏中，作者定义了这么一些基础的宏，作为“元宏”，它们是构成之后复杂宏的基础。在分析常用宏之前，必须要先分析清楚这些元宏的具体实现。
 
@@ -104,7 +86,6 @@ metamacro\_stringify( )这个宏用到了#的用法。#在宏中代表把宏的�
 ```
 
 语意确实也没有变，但是有种特殊情况下就会出现问题。
-
 
 举个例子：
 
@@ -177,16 +158,10 @@ CALCULATE(NUMBER,NUMBER) 第一层转换成 \_CALCULATE(10,10)，接着第二次
 当然这里是2层转换，如果有多层转换就需要更多个转换宏了。
 
 ```objectivec
-
 NSLog(@"%d", CALCULATE(STRINGIFY(NUMBER),STRINGIFY(NUMBER)));
-
-
 ```
 
-
 上面这个例子就是3层了，按照之前我们的写法还是编译报错。如果是超过2，3层的多层的情况，就该考虑考虑宏设计的语意的问题，尽量不让使用者产生错误的用法。
-
-
 
 #### 2. metamacro\_concat(A, B)
 
@@ -2365,13 +2340,7 @@ RACChannelTo(TARGET, ...)这个宏完全可以类比RAC(TARGET, ...)，两个几
 
 ### 最后
 
-
-
-
 ![](http://upload-images.jianshu.io/upload_images/1194012-12d1ffb7b9408d4f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
 
 关于ReactiveCocoa里面所有宏的实现分析都已经分析完成。我觉得宏是对一段逻辑的高度抽象，当一个宏被思维完备的开发人员设计出来以后，就是一个充满神奇色彩的魔法！如果能把一些简单实用的功能或者逻辑抽象成宏，把这些时间都节约到预编译中，节约运行时的时间，单从编码的程度来说，都是极有乐趣的一件事情！如果以后有机会，希望还能和大家交流交流Lisp里面的相关宏魔法的知识。
 

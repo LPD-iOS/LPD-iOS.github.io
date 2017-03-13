@@ -16,7 +16,6 @@ iOS 开发中给系统给我们提供了两种布局，frame 布局 和 AutoLayo
 
 ![](http://upload-images.jianshu.io/upload_images/3146026-d6aac250565c845d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 ![](http://upload-images.jianshu.io/upload_images/3146026-3bc85030fd48e766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Flexbox
@@ -28,7 +27,6 @@ Flexbox 是W3C在2009年提出的一种新的前端页面布局，目前，它�
 [Yoga](https://github.com/facebook/yoga) 是由C实现的Flexbox布局引擎，目前已经被用于在React Native 和 Weex 等开源项目中，性能和稳定性得到了很好的验证。但不足的是Yoga只实现了W3C标准的一个子集。算法逻辑如下图所示：
 
 ![](http://upload-images.jianshu.io/upload_images/3146026-207fffe178325068.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 ![](http://upload-images.jianshu.io/upload_images/3146026-5f576fb0f1a85f4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -121,11 +119,11 @@ UITableViewCell 自动计算高度 和 UITableView滑动性能一直是一个重
     reloadRowsAtIndexPaths:withRowAnimation:
     moveRowAtIndexPath:toIndexPath:
 ```
+
 刷新页面时，会对已有的高度进行失效处理，并重新计算新的缓存高度。
 
 [Demo](https://github.com/LPD-iOS/CSSLayout) 界面的刷新一直接近60FPS
 ![](http://upload-images.jianshu.io/upload_images/3146026-4511acac81df3074.gif?imageMogr2/auto-orient/strip)
-
 
 性能对比简单测试：
 
