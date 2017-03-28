@@ -2,7 +2,7 @@
 layout: post
 title: 'SSH-Keygen 中生成的 Randomart Image 是什么'
 date: '2017-03-27'
-header-img: "img/post-bg-weexios.jpg"
+header-img: "img/post-bg-ssh.jpg"
 tags:
      - SSH-Keygen
 author: '小鱼周凌宇'
