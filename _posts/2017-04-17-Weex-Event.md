@@ -2,17 +2,11 @@
 layout: post
 title: 'Weex 事件传递的那些事儿'
 date: '2017-04-17'
-header-img: "img/post-bg-weexevent.png"
+header-img: "img/post-bg-weexevent.jpg"
 tags:
      - Weex
 author: '一缕殇流化隐半边冰霜'
 ---
-
-![](http://upload-images.jianshu.io/upload_images/1194012-cc51f3fa785a0464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
 
 ### 前言
 
